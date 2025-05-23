@@ -1,4 +1,5 @@
-#Titan Capital: Tu Socio Estratégico en los Mercados Financieros
+#Titan Capital: 
+Tu Socio Estratégico en los Mercados Financieros
 Este repositorio contiene el código fuente de "Titan Capital", un sitio web diseñado para ser tu socio estratégico en los mercados financieros. El proyecto busca brindar conocimiento, herramientas y estrategias para navegar los mercados con confianza y alcanzar metas de inversión.
 Tabla de Contenidos
  * Acerca de

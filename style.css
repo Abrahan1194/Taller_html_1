@@ -1,0 +1,597 @@
+/* configuracion para todas la paginas */
+/* Esto es para que el "tamaño" de cada caja en tu página (como un texto o una imagen)
+   incluya el relleno y los bordes. Así, todo se ajusta mejor. */
+*, *::before, *::after {
+    box-sizing: border-box; /* Incluye relleno y borde en el tamaño total */
+    margin: 0; /* Elimina el espacio extra alrededor de los elementos por defecto */
+    padding: 0; /* Elimina el espacio extra dentro de los elementos por defecto */
+}
+
+/* Esto hace que, cuando haces clic en un enlace que te lleva a otra parte
+   de la misma página (como de un título a un párrafo más abajo), el salto sea suave,
+   no un brinco repentino. */
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en enlaces */
+}
+
+/* Estas son las reglas principales para todo el contenido de tu página. */
+body {
+    font-family: 'Arial', sans-serif; /* Usamos la fuente Arial, o una similar sin remates */
+    line-height: 1.6; /* El espacio entre cada línea de texto */
+    color: #343a40; /* El color principal para la mayoría de los textos (gris oscuro) */
+    background-color: #f8f9fa; /* Un fondo gris muy clarito para toda la página */
+    margin: 0; /* Aseguramos que no haya margen extra alrededor de la página */
+    /* Estas dos líneas ayudan a que las letras se vean más nítidas y suaves en diferentes navegadores. */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* textos y titulos */
+
+/* Reglas para todos los títulos (H1, H2, H3, H4, H5, H6) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', sans-serif; /* Usamos Helvetica Neue, o una similar */
+    color: #007bff; /* Color azul brillante para los títulos */
+    margin-bottom: 20px; /* Un espacio de 20 píxeles debajo de cada título */
+    line-height: 1.2; /* El espacio entre las líneas de un título (si fuera muy largo) */
+}
+
+/* Tamaños específicos para cada nivel de título, de más grande a más pequeño. */
+h1 { font-size: 2.8em; } /* Muy grande */
+h2 { font-size: 2.2em; } /* Grande */
+h3 { font-size: 1.8em; } /* Mediano */
+h4 { font-size: 1.4em; } /* Más pequeño */
+
+/* Reglas para los párrafos de texto normal. */
+p {
+    margin-bottom: 10px; /* Un espacio de 10 píxeles debajo de cada párrafo */
+}
+
+/* Reglas para todos los enlaces (texto en el que puedes hacer clic). */
+a {
+    color: #007bff; /* Color azul para los enlaces */
+    text-decoration: none; /* Quitamos la línea de subrayado por defecto */
+    transition: color 0.3s ease; /* Cuando pasas el ratón, el color cambia suavemente */
+}
+
+/* Lo que pasa cuando el ratón pasa por encima de un enlace. */
+a:hover {
+    color: #28a745; /* El enlace se vuelve verde */
+    text-decoration: underline; /* Y se subraya */
+}
+
+/* Estilos específicos para ciertos tipos de texto. */
+strong { font-weight: bold; } /* Hace el texto en negrita */
+em { font-style: italic; } /* Hace el texto en cursiva */
+small { font-size: 0.8em; color: #6c757d; } /* Hace el texto más pequeño y gris */
+abbr {
+    text-decoration: underline dotted; /* Pone una línea de puntos debajo */
+    cursor: help; /* El cursor cambia a una flecha con un signo de interrogación */
+}
+
+/* Estilos para fragmentos pequeños de código, como `console.log()` */
+code {
+    font-family: 'Consolas', 'Monaco', monospace; /* Una fuente que se ve como código */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 2px 4px; /* Un pequeño espacio alrededor del código */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    color: #c7254e; /* Color rojizo para el texto del código */
+}
+
+/* Estilos para bloques de código más grandes, como un fragmento de programación. */
+pre {
+    background-color: #2d2d2d; /* Fondo oscuro para el bloque de código */
+    color: #f8f8f2; /* Texto claro */
+    padding: 10px; /* Espacio dentro del bloque de código */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow-x: auto; /* Si el código es muy largo, puedes deslizarte horizontalmente */
+    margin-bottom: 20px; /* Espacio debajo del bloque de código */
+}
+
+/* Dentro de un bloque <pre>, el código no necesita su propio fondo ni relleno. */
+pre code {
+    background: none; /* Sin fondo */
+    padding: 0; /* Sin relleno */
+    border-radius: 0; /* Sin bordes redondeados */
+    color: inherit; /* Hereda el color de su padre (<pre>) */
+    display: block; /* Ocupa todo el espacio disponible */
+}
+
+/* Diseño general de la pagina */
+
+/* Estilos para el área principal de contenido de tu página (el <main>) */
+main {
+    max-width: 1200px; /* El ancho máximo que puede tener tu contenido */
+    margin: 60px auto; /* Centra el contenido en la página y le da 60px de espacio arriba y abajo */
+    padding: 20px; /* Un espacio de 20 píxeles dentro de esta área, para que el contenido no toque los bordes */
+    
+}
+main section figure {
+    text-align: center;
+}
+main section figure img {
+    border-radius: 50%;
+   
+}
+ 
+/* Estilos para cada sección de tu página (los <section>) */
+section {
+    background-color: #ffffff; /* Fondo blanco para cada sección */
+    padding: 40px; /* Mucho espacio dentro de cada sección */
+    margin-bottom: 40px; /* Un espacio de 40 píxeles debajo de cada sección */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Una sombra muy sutil debajo de la sección */
+}
+
+/* Centra el título H2 dentro de cada sección */
+section h2 {
+  text-align: center;
+}
+
+/* Encabezado y pie de pagina */
+
+
+/* Estilos para el encabezado (la parte superior de tu página, el <header>) */
+header {
+    background-color: gold; /* Fondo color oro */
+    color: #343a40; /* Color de texto oscuro */
+    padding: 10px 20px; /* Espacio interno, arriba/abajo y a los lados */
+    border-bottom: 1px solid #dee2e6; /* Una línea delgada en la parte inferior */
+    display: flex; /* Para organizar los elementos en una fila */
+    flex-wrap: wrap; /* Si la pantalla es pequeña, los elementos pueden ir a la línea de abajo */
+    justify-content: space-between; /* Empuja los elementos a los extremos */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 10px; /* Espacio entre los elementos del encabezado */
+}
+
+/* Estilos para la marca del sitio (el logo y el título juntos) */
+.site-branding {
+    display: flex; /* Para organizar el logo y el título en una fila */
+    align-items: center; /* Centra el logo y el título verticalmente */
+    gap: 10px; /* Espacio entre el logo y el título */
+}
+
+/* El título principal de tu sitio en el encabezado. */
+.site-branding h1 {
+    font-size: 1.5em; /* Un tamaño de letra mediano */
+    margin: 0; /* Quitamos el margen por defecto */
+    color: #343a40; /* Color de texto oscuro */
+}
+
+/* Estilos para la imagen del logo en el encabezado. */
+.site-logo-header {
+    width: 50px; /* Ancho de 50 píxeles */
+    height: 50px; /* Alto de 50 píxeles */
+    border-radius: 50%; /* Hace que el logo sea circular */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+    display: block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Una pequeña sombra */
+}
+
+/* Estilos para la barra de navegación (el <nav>) */
+nav {
+    background-color: gold; /* Fondo color oro */
+}
+
+/* Estilos para la lista de enlaces de navegación (el <ul> dentro del <nav>) */
+nav ul {
+    list-style: none; /* Quita los puntos de las listas */
+    display: flex; /* Organiza los enlaces en una fila */
+    flex-wrap: wrap; /* Si la pantalla es pequeña, los enlaces pueden ir a la línea de abajo */
+    gap: 20px; /* Espacio entre cada enlace de navegación */
+}
+
+/* Estilos para cada enlace de navegación. */
+nav ul li a {
+    color: #343a40; /* Color de texto oscuro */
+    font-weight: bold; /* Texto en negrita */
+    padding: 5px 10px; /* Espacio alrededor del texto del enlace */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Cambios suaves al pasar el ratón */
+}
+
+/* Lo que pasa cuando pasas el ratón o seleccionas un enlace de navegación. */
+nav ul li a:hover,
+nav ul li a:focus { /* Añadido focus para accesibilidad (cuando navegas con teclado) */
+    background-color: #007bff; /* Fondo azul */
+    color: #f8f9fa; /* Texto claro */
+    text-decoration: none; /* Quitamos el subrayado */
+}
+
+/* Estilos para el pie de página (el <footer>) */
+footer {
+    background-color: #343a40; /* Fondo gris muy oscuro */
+    color: #f8f9fa; /* Texto claro */
+    padding: 20px 40px; /* Espacio interno */
+    text-align: center; /* Centra todo el texto */
+    border-top: 1px solid #6c757d; /* Una línea delgada en la parte superior */
+    font-size: 0.9em; /* Letra un poco más pequeña */
+}
+
+/* Espacio debajo de los párrafos en el pie de página. */
+footer p {
+    margin-bottom: 5px;
+}
+
+/* Estilos para la dirección en el pie de página (el <address>) */
+footer address {
+    font-style: normal; /* Asegura que no se vea en cursiva */
+    margin-top: 10px; /* Espacio encima de la dirección */
+}
+
+/* Estilos para los enlaces en el pie de página. */
+footer a {
+    color: #f8f9fa; /* Color de texto claro */
+    text-decoration: underline; /* Subrayado */
+}
+
+/* Lo que pasa cuando pasas el ratón por un enlace en el pie de página. */
+footer a:hover {
+    color: #007bff; /* Se vuelve azul */
+}
+
+
+/* Estilo espesifico de pagina*/
+
+/* Estilos para la sección principal de "Hero" (la primera que ves al entrar a la web). */
+#hero {
+    text-align: center; /* Centra todo el contenido */
+    background-size: cover; /* La imagen de fondo cubrirá todo el espacio */
+    background-image: url('inicio1.jpg'); /* Tu imagen de fondo */
+    color: gold; /* Color oro para el texto */
+    background-repeat: no-repeat; /* La imagen de fondo no se repetirá */
+    padding: 60px 20px; /* Espacio interno de la sección */
+    margin-bottom: 40px; /* Espacio debajo de la sección */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Una sombra más notoria */
+}
+
+/* Estilos para imágenes dentro de la sección "Hero" */
+#hero img {
+    max-width: 100%; /* Asegura que la imagen no se salga de su espacio */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Una pequeña sombra */
+}
+
+/* Estilos para el título principal de la sección "Hero" (¡con un efecto de texto!) */
+#hero h2 {
+    font: bold 80px/1 arial; /* Fuente Arial, negrita, tamaño grande */
+    text-transform: uppercase; /* Todo el texto en mayúsculas */
+    color: #c69c1e; /* Un tono de oro */
+    /* Este es un efecto genial para simular una sombra 3D en el texto */
+    text-shadow: 0  2px  0   #8b6e15,
+                 0  4px  0   #7c6213,
+                 0  6px  0   #6e5611,
+                 0  8px  0   #5f4b0e,
+                 0 10px  0   #503f0c,
+                 0 12px  0   #41330a,
+                3px 8px 15px rgba(0,0,0,0.1),
+                3px 8px  5px rgba(0,0,0,0.3);
+    font-size: 2.5em; /* El tamaño real de la fuente */
+}
+
+/* Estilos para los párrafos en la sección "Hero" */
+#hero p {
+    max-width: 800px; /* Ancho máximo para el párrafo */
+    margin: 0 auto; /* Centra el párrafo */
+    font-size: 1.1em; /* Letra un poco más grande */
+}
+
+/* Pagina inicio index ---seccion destacados*/
+
+/* Estilos para la sección de "Destacados" */
+#destacados {
+    display: grid; /* Organiza los elementos en una cuadrícula */
+    /* Las columnas de la cuadrícula tendrán un ancho mínimo de 280px y se adaptarán */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px; /* Espacio entre los elementos de la cuadrícula */
+    background-color: #f8f9fa; /* Fondo gris claro para destacarla */
+    padding: 40px; /* Espacio interno */
+}
+
+/* Estilos para cada "Artículo Destacado" individual. */
+.featured-item {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra sutil */
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Centra el texto */
+    transition: transform 0.3s ease; /* Animación suave al pasar el ratón */
+}
+
+/* Lo que pasa cuando el ratón pasa por encima de un artículo destacado. */
+.featured-item:hover {
+    transform: scale(1.2)/* Se mueve ligeramente hacia arriba */
+}
+
+/* Estilos para las imágenes de los artículos destacados. */
+.featured-item img {
+    max-width: 100%; /* No se sale de su contenedor */
+    height: 180px; /* Altura fija para que todas las imágenes tengan el mismo tamaño */
+    object-fit: cover; /* Asegura que la imagen cubra el área */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+/* Estilos para los títulos de los artículos destacados. */
+.featured-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+/* Pagina Productos */
+
+/* Estilos para cada producto individual en la lista. */
+.producto {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #dee2e6; /* Borde delgado */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 20px; /* Espacio debajo de cada producto */
+    display: flex; /* Para organizar imagen y texto en una fila */
+    flex-wrap: wrap; /* Permite que la imagen y el texto salten de línea en pantallas pequeñas */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    align-items: center; /* Centra verticalmente los elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra sutil */
+}
+
+/* Contenedor de la imagen del producto. */
+.producto figure {
+    flex: 1 1 300px; /* La imagen ocupará al menos 300px o el espacio restante */
+    margin: 0; /* Quita el margen por defecto */
+    text-align: center; /* Centra la imagen */
+}
+
+/* Estilos para las imágenes de los productos. */
+.producto img {
+   
+    max-width: 100%; /* No se sale de su contenedor */
+    height: 250px; /* Altura fija para que todas las imágenes sean uniformes */
+    object-fit: cover; /* Asegura que la imagen cubra el área */
+    display: block;
+    margin: auto; /* Centra la imagen horizontalmente */
+}
+
+/* Estilos para el texto descriptivo debajo de la imagen del producto. */
+.producto figcaption {
+    font-style: italic; /* Texto en cursiva */
+    color: #6c757d; /* Color gris */
+    font-size: 0.9em; /* Letra un poco más pequeña */
+    margin-top: 5px; /* Espacio encima del texto */
+}
+
+/* Estilos para el precio del producto. */
+.producto .precio {
+    font-weight: bold; /* Texto en negrita */
+    color: #28a745; /* Color verde */
+    font-size: 1.2em; /* Letra más grande */
+    margin-top: 10px; /* Espacio encima del precio */
+}
+
+
+/* Pagina   Blog */
+/* Estilos para cada entrada de blog individual. */
+.entrada-blog {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #dee2e6; /* Borde delgado */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 20px; /* Espacio debajo de cada entrada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra sutil */
+}
+
+/* Títulos de las entradas de blog. */
+.entrada-blog h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #007bff; /* Color azul */
+}
+
+/* Párrafos en las entradas de blog. */
+.entrada-blog p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el autor y la fecha/hora de la entrada de blog. */
+.entrada-blog address,
+.entrada-blog time {
+    display: inline; /* Para que estén en la misma línea */
+    font-style: normal; /* No cursiva */
+    color: #6c757d; /* Color gris */
+    font-size: 0.9em; /* Letra más pequeña */
+}
+/* Añade una barra vertical entre el autor y la fecha/hora. */
+.entrada-blog address::after { content: " | "; }
+/* Quita la barra vertical al final si es el último elemento. */
+.entrada-blog address:last-of-type::after { content: ""; }
+
+
+/* Pie de página de una entrada de blog (donde puede ir el autor y la fecha, etc.). */
+.entrada-blog footer {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    padding: 10px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio encima del pie de página */
+    display: flex; /* Para organizar elementos en una fila */
+    justify-content: space-between; /* Empuja los elementos a los extremos */
+    align-items: center; /* Centra verticalmente */
+    font-size: 0.9em;
+    color: #6c757d; /* Color gris */
+}
+
+/* Enlaces en el pie de página de una entrada de blog. */
+.entrada-blog footer a {
+    color: #007bff; /* Color azul */
+    text-decoration: underline; /* Subrayado */
+}
+
+
+/* Pagina Formulario*/
+
+/* Contenedor principal del formulario de contacto. */
+#formulario-contacto {
+    max-width: 600px; /* Ancho máximo para el formulario */
+    margin: 20px auto; /* Centra el formulario */
+}
+
+/* Conjuntos de campos en el formulario (como el nombre, correo, etc.). */
+form fieldset {
+    border: 1px solid #dee2e6; /* Borde delgado */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 20px; /* Espacio debajo de cada conjunto */
+}
+
+/* El título de cada conjunto de campos (el <legend>). */
+form legend {
+    font-weight: bold; /* Negrita */
+    color: #007bff; /* Color azul */
+    padding: 0 5px; /* Pequeño espacio alrededor del texto */
+}
+
+/* Párrafos dentro del formulario. */
+form p {
+    margin-bottom: 10px;
+}
+
+/* Etiquetas (el texto que describe cada campo de formulario). */
+form label {
+    display: block; /* Cada etiqueta ocupa su propia línea */
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+    font-weight: bold; /* Negrita */
+    color: #343a40; /* Color de texto oscuro */
+}
+
+/* Campos de entrada de texto, correo, contraseña y áreas de texto. */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"], /* Si tuvieras un campo de contraseña */
+form textarea {
+    width: calc(100% - (10px * 2)); /* Ocupa casi todo el ancho, restando el espacio interno */
+    padding: 10px; /* Espacio dentro del campo */
+    border: 1px solid #dee2e6; /* Borde delgado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de letra normal */
+    margin-bottom: 5px; /* Espacio debajo del campo */
+}
+
+/* Lo que pasa cuando seleccionas un campo de formulario. */
+form input:focus,
+form textarea:focus {
+    outline: none; /* Quita el borde azul por defecto del navegador */
+    border-color: #007bff; /* El borde se vuelve azul */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Una sombra azul sutil */
+}
+
+/* Botón de enviar formulario. */
+form button[type="submit"] {
+    background-color: #007bff; /* Fondo azul */
+    color: #f8f9fa; /* Texto claro */
+    padding: 10px 20px; /* Espacio dentro del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* El cursor cambia a una mano */
+    font-size: 1.1em; /* Letra un poco más grande */
+    font-weight: bold; /* Negrita */
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Animaciones suaves */
+}
+
+/* Lo que pasa cuando pasas el ratón por el botón de enviar. */
+form button[type="submit"]:hover {
+    background-color: #0056b3; /* Un azul más oscuro */
+    transform: translateY(-2px); /* El botón se "levanta" un poco */
+}
+
+/*pagina--Sobre mi*/
+
+/* Lista de habilidades e intereses. */
+#habilidades-intereses ul {
+    list-style: none; /* Quita los puntos de las listas */
+    margin-top: 10px; /* Espacio encima de la lista */
+    margin-bottom: 20px; /* Espacio debajo de la lista */
+}
+
+/* Cada elemento de la lista de habilidades/intereses. */
+#habilidades-intereses ul li {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    border-left: 5px solid #007bff; /* Una línea azul en el lado izquierdo */
+    padding: 10px; /* Espacio interno */
+    margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Etiqueta semanticas */
+
+/* Cada sección que explica una etiqueta. */
+.explicacion-etiqueta {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #dee2e6; /* Borde delgado */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 20px; /* Espacio debajo de cada explicación */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra sutil */
+}
+
+/* Títulos principales dentro de las explicaciones de etiquetas. */
+.explicacion-etiqueta h3 {
+    color: #007bff; /* Color azul */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+/* Subtítulos dentro de las explicaciones de etiquetas. */
+.explicacion-etiqueta h4 {
+    color: #343a40; /* Color de texto oscuro */
+    margin-top: 20px; /* Espacio encima del subtítulo */
+    margin-bottom: 10px; /* Espacio debajo del subtítulo */
+    font-size: 1.1em; /* Letra un poco más grande */
+}
+
+/* Galeria*/
+
+/* La cuadrícula donde se mostrarán todas las imágenes de la galería. */
+.gallery-grid {
+    display: grid; /* Organiza los elementos en una cuadrícula */
+    /* Las columnas de la cuadrícula tendrán un ancho mínimo de 280px y se adaptarán */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px; /* Espacio entre las imágenes en la cuadrícula */
+    padding: 20px; /* Espacio dentro del contenedor de la galería */
+}
+
+/* Cada imagen individual con su pie de foto en la galería. */
+.gallery-grid figure {
+    margin: 0; /* Quita el margen por defecto */
+    border: 1px solid #dee2e6; /* Borde delgado */
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 10px; /* Espacio interno */
+    text-align: center; /* Centra el contenido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Animación suave al pasar el ratón */
+}
+
+/* Lo que pasa cuando pasas el ratón por encima de una imagen en la galería. */
+.gallery-grid figure:hover {
+    transform: scale(1.03); /* La imagen se agranda un poco */
+}
+
+/* Estilos para las imágenes dentro de la galería. */
+.gallery-grid img {
+    max-width: 100%; /* No se sale de su contenedor */
+    height: 200px; /* Altura fija para que todas las miniaturas sean uniformes */
+    object-fit: cover; /* La imagen cubre el área sin deformarse */
+    display: block;
+    margin: 0 auto 10px; /* Centra la imagen y le da espacio abajo */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Pie de foto de las imágenes de la galería. */
+.gallery-grid figcaption {
+    font-style: italic; /* Cursiva */
+    color: #6c757d; /* Color gris */
+    font-size: 0.9em; /* Letra un poco más pequeña */
+}
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Semánticas </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="site-branding">
+            <a href="index.html" aria-label="Volver a la página principal de Tu Portal Semántico">
+                <img src="icono.jpeg" alt="Logotipo circular de Tu Portal Semántico" class="site-logo-header" width="50" height="50">
+            </a>
+            <h1>Titan Capital: Tu Socio Estratégico en los Mercados Financieros</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><a href="etiquetas.html">Etiquetas Semánticas</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="explicacion-semantica">
+            <h2>El Poder de las Etiquetas Semánticas en HTML5</h2>
+            <p>Las etiquetas semánticas en HTML5 no solo estructuran el contenido, sino que le dan significado, mejorando la accesibilidad y el SEO. Aquí te explicamos algunas de las más importantes.</p>
+
+            <article class="explicacion-etiqueta">
+                <h3>La etiqueta `&lt;article&gt;`</h3>
+                <p>La etiqueta `&lt;article&gt;` representa una pieza de contenido independiente y autocontenida, que podría ser distribuible o reutilizable. Piensa en ella como una entrada de blog, un comentario, una noticia o un elemento de un foro.</p>
+                <h4>Ejemplo de uso de `&lt;article&gt;`:</h4>
+                <pre><code>
+&lt;article&gt;
+    &lt;h2&gt;Mi Primera Publicación&lt;/h2&gt;
+    &lt;p&gt;Este es el contenido de mi publicación de blog.&lt;/p&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Publicado por John Doe el &lt;time datetime="2025-01-01"&gt;1 de Enero de 2025&lt;/time&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/article&gt;
+                </code></pre>
+            </article>
+
+            <article class="explicacion-etiqueta">
+                <h3>La etiqueta `&lt;section&gt;`</h3>
+                <p>La etiqueta `&lt;section&gt;` representa una sección genérica de un documento. Es un agrupador temático de contenido. Un `&lt;section&gt;` siempre debe tener un encabezado (`&lt;h1&gt;` a `&lt;h6&gt;`) para definir su propósito.</p>
+                <h4>Ejemplo de uso de `&lt;section&gt;`:</h4>
+                <pre><code>
+&lt;section&gt;
+    &lt;h2&gt;Acerca de Nosotros&lt;/h2&gt;
+    &lt;p&gt;Somos una empresa dedicada a...&lt;/p&gt;
+&lt;/section&gt;
+                </code></pre>
+            </article>
+
+            <article class="explicacion-etiqueta">
+                <h3>La etiqueta `&lt;nav&gt;`</h3>
+                <p>La etiqueta `&lt;nav&gt;` se utiliza para agrupar enlaces de navegación principales. No todos los grupos de enlaces son de navegación; solo aquellos que son cruciales para la navegación del sitio.</p>
+                <h4>Ejemplo de uso de `&lt;nav&gt;`:</h4>
+                <pre><code>
+&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="/"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/productos"&gt;Productos&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+                </code></pre>
+            </article>
+
+            <article class="explicacion-etiqueta">
+                <h3>La etiqueta `&lt;header&gt;`</h3>
+                <p>La etiqueta `&lt;header&gt;` representa contenido introductorio o un grupo de ayudas de navegación. Frecuentemente contiene un encabezado (`&lt;h1&gt;` a `&lt;h6&gt;`), un logotipo, un menú de navegación, etc.</p>
+                <h4>Ejemplo de uso de `&lt;header&gt;`:</h4>
+                <pre><code>
+&lt;header&gt;
+    &lt;h1&gt;Mi Sitio Web&lt;/h1&gt;
+    &lt;img src="logo.png" alt="Logotipo"&gt;
+    &lt;nav&gt;...&lt;/nav&gt;
+&lt;/header&gt;
+                </code></pre>
+            </article>
+
+            <article class="explicacion-etiqueta">
+                <h3>La etiqueta `&lt;footer&gt;`</h3>
+                <p>La etiqueta `&lt;footer&gt;` representa un pie de página para su contenido de sección o raíz de sección más cercano. Típicamente contiene información sobre el autor, derechos de autor, enlaces a documentos relacionados, etc.</p>
+                <h4>Ejemplo de uso de `&lt;footer&gt;`:</h4>
+                <pre><code>
+&lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2025 Mi Empresa&lt;/p&gt;
+    &lt;address&gt;Contacto: info@miempresa.com&lt;/address&gt;
+&lt;/footer&gt;
+                </code></pre>
+            </article>
+        </section>
+    </main>
+
+   <footer>
+        <p>&copy; 2025 Titan Capital. Todos los derechos reservados.</p>
+        <address>
+            Contacto: <a href="Titan.capital@gmail.com">Titan.capital@gmail.com</a> | Tel: 3148400466
+        </address>
+    </footer>
+</body>
+</html>

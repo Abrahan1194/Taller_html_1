@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="site-branding">
+            <a href="index.html" aria-label="Volver a la página principal de Tu Portal Semántico">
+                <img src="icono.jpeg" alt="Logotipo circular de Tu Portal Semántico" class="site-logo-header" width="50" height="50">
+            </a>
+            <h1>Titan Capital: Tu Socio Estratégico en los Mercados Financieros</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><a href="etiquetas.html">Etiquetas Semánticas</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulario-contacto">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna pregunta, sugerencia o simplemente quieres saludar? ¡Estamos encantados de escucharte!</p>
+
+            <form action="enviar_formulario.php" method="POST">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                        <small>Campo obligatorio.</small>
+                    </p>
+                    <p>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+                        <small>Por favor, usa un formato válido (ej. <abbr title="ejemplo@correo.com">ejemplo@correo.com</abbr>).</small>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles del Mensaje</legend>
+                    <p>
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required placeholder="Ej: Consulta sobre producto X">
+                        <small>Sé conciso, por favor.</small>
+                    </p>
+                    <p>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="8" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <small>Máximo 500 caracteres.</small>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+   <footer>
+        <p>&copy; 2025 Titan Capital. Todos los derechos reservados.</p>
+        <address>
+            Contacto: <a href="Titan.capital@gmail.com">Titan.capital@gmail.com</a> | Tel: 3148400466
+        </address>
+    </footer>
+</body>
+</html>
